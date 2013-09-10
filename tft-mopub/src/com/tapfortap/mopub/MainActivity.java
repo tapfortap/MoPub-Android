@@ -18,11 +18,11 @@ public class MainActivity extends Activity implements MoPubView.BannerAdListener
         setContentView(R.layout.main);
 
         moPubView = (MoPubView)findViewById(R.id.mopub_view);
-        moPubView.setAdUnitId("0931c5722f6b4485ba7b3c2506bf06ba");
+        moPubView.setAdUnitId("BANNER_AD_ID");
         moPubView.loadAd();
         moPubView.setBannerAdListener(this);
 
-        interstitial = new MoPubInterstitial(this, "8ee286cbf23e4cb4be0b30c2bcdb3dc8");
+        interstitial = new MoPubInterstitial(this, "INTERSTITIAL_AD_ID");
         interstitial.setInterstitialAdListener(this);
         interstitial.load();
 
